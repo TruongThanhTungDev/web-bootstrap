@@ -9,3 +9,10 @@ body {
 .w-45 {
   width: 45%;
 }
+.table-responsive {
+  max-height:300px;
+}
+.input-custom {
+  outline: none;
+  border: none
+}

@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="main.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <title>Thêm đối tác</title>
+  <title>Thêm xe</title>
 </head>
   <body>
     <div class="container-sm position-relative" style="height: 100vh">
@@ -14,35 +14,33 @@
         <div class="text-end">
           ID: 123456789
         </div>
-        <div class="fw-bolder text-center fs-4 my-4">
-          TÌM KIẾM ĐỐI TÁC THEO KIỂU XE
-        </div>
         <div>
-          <div class="w-100 d-flex align-items-center justify-content-between ">
-            <div class="input-group mb-3 w-25">
-              <label for="search" class="input-group-text">Kiểu xe</label>
-              <input type="text" class="form-control w-25" placeholder="Tìm kiếm..." aria-label="search" aria-describedby="basic-addon1" name="search">
-              <button class="input-group-text" id="basic-addon1">
-                <img src="./asset/image/search.svg" alt="search">
-              </button>
+          <h5 class="text-center mb-4">
+            Chọn xe theo đối tác
+          </h5>
+          <div class="d-flex w-100 justify-content-between align-items-center mb-4">
+            <div class="d-flex w-50 justify-content-between mb-3 fw-bold">
+              <div>
+              Đối tác: DC Company
+              </div>
+              <div>
+                Kiểu xe: Honda city
+              </div>
             </div>
             <div>
-              <button data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-primary">
-                Thêm đối tác
+              <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" >
+                Thêm xe
               </button>
             </div>
           </div>
-          <h5 class="text-center mb-4">
-            Danh sách đối tác theo kiểu xe
-          </h5>
           <div class="table-responsive position-relative mb-3">
             <table class="table position-relative">
               <thead class="table-dark position- w-100">
                 <tr>
                   <th scope="col">STT</th>
-                  <th scope="col">Tên đối tác</th>
-                  <th scope="col">Địa chỉ</th>
-                  <th scope="col">Điện thoại</th>
+                  <th scope="col">Tên</th>
+                  <th scope="col">Biển số xe</th>
+                  <th scope="col">Tình trạng xe</th>
                   <th scope="col">Thao tác</th>
                 </tr>
               </thead>
@@ -133,10 +131,10 @@
             </table>
           </div>
           <div class="d-flex justify-content-center">
-            <a class="btn btn-primary mx-2" href="add-car.html">
-            Thêm đối tác
+            <a class="btn btn-primary mx-2" href="result-detail.html">
+            Thêm xe
             </a>
-            <a class="btn btn-danger mx-2">
+            <a class="btn btn-danger mx-2" href="index.html">
             Quay lại
             </a>
           </div>
@@ -147,12 +145,12 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Thêm đối tác mới</h5>
+            <h5 class="modal-title" id="exampleModalLabel">Thêm xe mới</h5>
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
           </div>
           <div class="modal-body">
-            <span>Tên đối tác</span>
-            <input type="text" class="form-control" placeholder="Nhập tên đối tác...">
+            <span>Tên xe</span>
+            <input type="text" class="form-control" placeholder="Nhập tên xe...">
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Hủy</button>
